@@ -402,6 +402,7 @@ pre {
   margin-bottom: 15px;
   position: relative;
   overflow: hidden;
+  letter-spacing: 3px;
 }
 .post .featured {
   position: absolute;
@@ -483,7 +484,7 @@ pre {
 }
 .post .post-body p {
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 2;
 }
 .post .post-body p img {
   max-width: 100%;
@@ -1245,7 +1246,7 @@ pre {
 .reward .reward-tip {
   font-size: 18px;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   color: #969696;
   margin: 15px auto;
   text-align: center;
@@ -1343,10 +1344,10 @@ pre,
   overflow: auto;
   margin: 20px 0;
   padding: 0;
-  color: #c5c8c6;
   font-size: 13px;
-  background: #1d1f21;
   line-height: 1.6;
+  color:#2e2f3e;
+  background: #eee;
 }
 code {
   padding: 2px 4px;
@@ -1406,15 +1407,15 @@ pre .comment {
 .highlight .gutter pre {
   padding-left: 10px;
   padding-right: 10px;
-  color: #888f96;
+  color: #2e2f3e;
   text-align: right;
-  background-color: #000;
+  background-color: #eee;
 }
 .highlight .code pre {
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #1d1f21;
+  background-color: #eee;
 }
 .highlight .line {
   height: 20px;

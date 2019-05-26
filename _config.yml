@@ -8,15 +8,6 @@ menu:
 - page: home
   url: /
   icon:
-- page: 前端
-  url: /categories/前端/
-  icon:
-- page: 后端
-  url: /categories/后端/
-  icon:
-- page: 工具
-  url: /categories/工具/
-  icon:
 - page: 时间轴
   url: /archives/
   icon:
@@ -37,12 +28,12 @@ carousel:
 ## widgets
 widgets:
   - search
-  - notification
-  - social
+#  - notification
+#  - social
   - category
   - archive
   - tagcloud
-  - friends
+#  - friends
   - stick
 
 
@@ -148,7 +139,7 @@ fontAwesome:
 
 ## 文章过期提醒功能
 warning:
-  days: 300
+  days: 666
   text: '本文于%d天之前发表，文中内容可能已经过时。'
 
 ## 文章内声明
@@ -156,7 +147,7 @@ declaration:
   enable: true
   title: '转载声明'
   tip: |-
-      商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Snippet</a>
+      商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">闹闹吃鱼</a>
 
 ## 文章打赏
 reward:
@@ -168,19 +159,16 @@ reward:
 
 ## Valine评论
 valine:
-  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
-  appid: xl6g1Q7kvS1x15q1q777Ig4V-gzGzoHsz
-  appkey: uVeUIqfE7bmut1PrMA6VMVGo
-  notify: true # mail notifier, See: https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
-  placeholder: 留言快活呀~（支持markdown语法） # comment box placeholder
-  avatar: mm # gravatar style
-  guest_info: nick,mail,link # custom comment header
-  pageSize: 10 # pagination size
-  language: zh-cn # language, available values: en, zh-cn
-  visitor: true # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
-  comment_count: true # if false, comment count will only be displayed in post page, not in home page
-
+   enable: true
+   appId: xl6g1Q7kvS1x15q1q777Ig4V-gzGzoHsz
+   appKey: uVeUIqfE7bmut1PrMA6VMVGo
+   placeholder: 一起high呀~可以使用markdown语法哦！
+   notify: true
+   verify: false
+   avatar: mm
+   meta: nick,mail
+   pageSize: 10
+   visitor: true // 阅读量统计
 
 ### 畅言评论(需要ICP备案)
 changyan:
