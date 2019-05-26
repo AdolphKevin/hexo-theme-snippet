@@ -54,8 +54,8 @@ jsonContent:
     title: true
     text: true
     content: true
-    categories: false
-    tags: false
+    categories: true
+    tags: true
 
 ## 网站公告设置
 notification: |-
@@ -168,15 +168,19 @@ reward:
 
 ## Valine评论
 valine:
-   enable: true
-   appId: xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz
-   appKey: erIpQac4azoCmgfBB7Dl9maa
-   placeholder: 说点什么吧
-   notify: false
-   verify: true
-   avatar: mm
-   meta: nick,mail
-   pageSize: 10
+  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
+  appid: xl6g1Q7kvS1x15q1q777Ig4V-gzGzoHsz
+  appkey: uVeUIqfE7bmut1PrMA6VMVGo
+  notify: true # mail notifier, See: https://github.com/xCss/Valine/wiki
+  verify: false # Verification code
+  placeholder: 留言快活呀~（支持markdown语法） # comment box placeholder
+  avatar: mm # gravatar style
+  guest_info: nick,mail,link # custom comment header
+  pageSize: 10 # pagination size
+  language: zh-cn # language, available values: en, zh-cn
+  visitor: true # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
+  comment_count: true # if false, comment count will only be displayed in post page, not in home page
+
 
 ### 畅言评论(需要ICP备案)
 changyan:
